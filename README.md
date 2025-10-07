@@ -16,7 +16,7 @@ The model is saved in **TensorFlow SavedModel format** (instead of `.h5`).
 ---
 
 ## 🏗️ Project Structure
----
+```
 BrainTumorApp/
 ├─ BrainTumorApp/
 │ ├─ settings.py
@@ -34,7 +34,7 @@ BrainTumorApp/
 ├─ manage.py
 ├─ requirements.txt
 └─ README.md
----
+```
 
 ---
 
@@ -50,12 +50,12 @@ python -m venv env
 3️⃣ Activate the environment
 
 Windows:
-
+```
 env\Scripts\activate
-
+```
 
 Mac/Linux:
-
+```
 source env/bin/activate
 
 4️⃣ Install dependencies
@@ -66,8 +66,8 @@ If requirements.txt doesn’t exist yet, create one:
 
 pip install django tensorflow pillow
 pip freeze > requirements.txt
-
-5️⃣ Add your trained model
+```
+## 5️⃣ Add your trained model
 
 Copy your exported SavedModel folder (from Google Colab) into:
 
@@ -90,7 +90,7 @@ Then open your browser and go to:
 
 http://127.0.0.1:8000/
 
-🧪 How It Works
+## 🧪 How It Works
 
 The user uploads an MRI image using the web form.
 
@@ -100,7 +100,7 @@ TensorFlow model loads and predicts the image.
 
 The result (“Tumor Detected” / “No Tumor”) is shown with the uploaded image.
 
-💡 Technologies Used
+## 💡 Technologies Used
 
 Python 3.x
 
@@ -112,7 +112,7 @@ Pillow (PIL) – Image processing
 
 HTML/CSS – Frontend design
 
-🛠️ Future Improvements
+## 🛠️ Future Improvements
 
 Add prediction confidence score
 
